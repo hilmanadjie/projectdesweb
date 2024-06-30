@@ -1,0 +1,158 @@
+body {
+  height: 100%;
+  min-height: 100vh; 
+}
+.form-signin {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh; 
+}
+
+.form-signin form, .form-signin nav{
+  min-width: 380px; 
+}
+
+.sidebar {
+  display: flex;
+  width: 350px;
+  flex-wrap: nowrap;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 1000;
+  position: fixed;
+}
+
+.dropdown-menu{
+  min-width: 300px;
+}
+
+.feed-container{
+  margin-left: 350px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-gallery .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-item .post-img {
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-item .overlay .profile-img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .image-gallery {
+    flex-direction: row;
+  }
+}
+
+.image-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.impression{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  background: rgba(33, 37, 41, 0.9);
+  border-radius: 0 0 8px 8px;
+  bottom: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-item:hover .overlay {
+  transform: scale(1);
+}
+.image-item:hover .impression {
+  transform: scale(0);
+}
+
+.toast{
+  height: 400px;
+}
+.chat-text{
+  max-height: 290px;
+  position: relative;
+  overflow-y: scroll;
+} 
+.comment-section{
+  max-height: 350px;
+}
+.scroll-style::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+.scroll-style::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: transparent;
+}
+
+.scroll-style::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+	background-color: rgba(33, 37, 41, 0.1);
+}
+.line {
+  height: 1px;
+  width: 43%;
+}
+.nav-pills > .active {
+  color: #fff !important;
+}
+
+.btn-prim, .bg-prim{
+  background-color: #D25B18 !important;
+  color: white;
+}
+
+.btn-sec, .bg-sec{
+  background-color: #D58D65 !important;
+}
+
+.btn-sec:hover, .btn-outline-secondary:hover{
+  background: #D25B18 !important;
+}
+
+.orange.active{
+  background-color: #D25B18 !important;
+}
+
+.small{
+  font-size: .825em !important;
+}

@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imajika</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="bg-light scroll-style">
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="sidebar col-auto d-flex flex-column flex-shrink-0  px-3 pt-3  bg-white text-dark">
+                <a href="home.html" class="d-flex align-items-center text-dark text-decoration-none w-100">
+                    <img class="object-fit-cover w-50 mx-auto" src="../assets/img/logoL.png" alt="">
+                </a>
+                <hr class="invisible">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link orange text-dark" aria-current="page">
+                            <i class="bi bi-house-door me-2"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="explore.html" class="nav-link orange text-dark">
+                            <i class="bi bi-globe me-2"></i>
+                            Explore
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="nav-link orange active">
+                            <i class="bi bi-person-circle me-2"></i>
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="nav-link orange text-dark">
+                            <i class="bi bi-gear me-2"></i>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+                <hr class="invisible">
+                <ul class="nav nav-pills flex-column align-items-center text-dark text-decoration-none mt-auto">
+                    <li>
+                        <small>
+                            <a href="../index.html" class="nav-link text-muted">
+                                <i class="bi bi-box-arrow-left me-2"></i>
+                                Sign Out
+                            </a>
+                        </small>
+                    </li>
+                </ul>
+            </div>
+            <div class="col feed-container bg-light py-2">
+                <nav class="navbar navbar-expand-lg px-2">
+                    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn btn-link text-decoration-none text-dark position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-bell fs-5"></i>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end bg-sec">
+                                        <li><h6 class="dropdown-header text-dark">Notifications</h6></li>
+                                        <li>
+                                            <a class="d-flex text-muted dropdown-item align-items-center border-bottom border-dark pb-2 mt-1 w-100">
+                                                <img class="object-fit-cover flex-shrink-0 me-3 rounded-circle" src="https://source.unsplash.com/Cb5A-Pgetl8" alt="" width="48" height="48">
+                                                <p class="my-auto small text-dark me-5">
+                                                    <strong class="d-block text-dark">Fierly</strong>
+                                                    Started following you.
+                                                </p>
+                                                <button type="button" class="btn btn-prim btn-sm rounded ms-auto px-4"><small>Follow</small></button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex text-muted dropdown-item align-items-center border-bottom border-dark pb-2 mt-1 w-100">
+                                                <img class="object-fit-cover flex-shrink-0 me-3 rounded-circle" src="https://source.unsplash.com/Cb5A-Pgetl8" alt="" width="48" height="48">
+                                                <p class="my-auto small text-dark me-5">
+                                                    <strong class="d-block text-gray-dark">Fierly</strong>
+                                                    Started following you.
+                                                </p>
+                                                <button type="button" class="btn btn-light border btn-sm rounded ms-auto px-4"><small>Following</small></button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex text-muted dropdown-item align-items-center border-bottom border-dark pb-2 mt-1 w-100">
+                                                <img class="object-fit-cover flex-shrink-0 me-3 rounded-circle" src="https://source.unsplash.com/Cb5A-Pgetl8" alt="" width="48" height="48">
+                                                <p class="my-auto small text-dark me-5">
+                                                    <strong class="d-block text-gray-dark">Fierly</strong>
+                                                    Liked your post.
+                                                </p>
+                                                <img class="object-fit-cover ms-auto rounded" src="https://source.unsplash.com/Cb5A-Pgetl8" alt="" width="48" height="48">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex text-muted dropdown-item align-items-center border-bottom border-dark pb-2 mt-1 w-100">
+                                                <img class="object-fit-cover flex-shrink-0 me-3 rounded-circle" src="https://source.unsplash.com/Cb5A-Pgetl8" alt="" width="48" height="48">
+                                                <p class="my-auto small text-dark me-5">
+                                                    <strong class="d-block text-gray-dark">Fierly</strong>
+                                                    Comment on your post.
+                                                </p>
+                                                <img class="object-fit-cover ms-auto rounded" src="https://source.unsplash.com/Cb5A-Pgetl8" alt="" width="48" height="48">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn btn-link text-decoration-none text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-send fs-5"></i>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end bg-sec">
+                                        <li><h6 class="dropdown-header text-dark">Chats</h6></li>
+                                        <li>
+                                            <a class="d-flex text-muted dropdown-item align-items-center border-bottom border-dark pb-2 mt-1 w-100" id="liveToastBtn">
+                                                <img class="object-fit-cover flex-shrink-0 me-3 rounded-circle" src="https://source.unsplash.com/Cb5A-Pgetl8" alt="" width="48" height="48">
+                                                <p class="my-auto small text-dark me-5">
+                                                    <strong class="d-block">Fierly</strong>
+                                                    Halo bro
+                                                </p>
+                                                <button type="button" class="btn btn-sm ms-auto p-0"><small><i class="bi bi-check-all"></i> Read</small></button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex text-muted dropdown-item align-items-center border-bottom border-dark pb-2 mt-1 w-100">
+                                                <img class="object-fit-cover flex-shrink-0 me-3 rounded-circle" src="https://source.unsplash.com/Cb5A-Pgetl8" alt="" width="48" height="48">
+                                                <p class="my-auto small text-dark me-5">
+                                                    <strong class="d-block">Fierly</strong>
+                                                    Halo bro    
+                                                </p>
+                                                <button type="button" class="btn btn-sm ms-auto p-0"><small><i class="bi bi-check-all"></i> Delivered</small></button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="btn btn-prim rounded-pill text-nowrap ms-4" type="button" data-bs-toggle="modal" data-bs-target="#addPostModal"><i class="bi bi-plus-circle"></i><small> Add Post</small></button>
+                    </div>
+                </nav>
+                <div class="d-flex align-items-start justify-content-center">
+                    <div class="row w-50 g-2 d-flex align-items-center">
+                        <div class="col-4 d-flex justify-content-end m-0">
+                            <img class="d-block object-fit-cover rounded-circle" src="https://source.unsplash.com/Cb5A-Pgetl8" alt="" width="120" height="120">
+                        </div>
+                        <div class="col-8 d-flex align-items-start flex-column m-0">
+                            <span class="text-start w-100">
+                                <strong class="h5 fw-bold">Hilman Adjie</strong> <small class="text-secondary text-opacity-50">@Hilman_Adjie</small>
+                            </span>
+                            <div class="row g-0 w-100 my-2">
+                                <div class="col">
+                                    <span>
+                                        <strong>142</strong>
+                                        <small class="text-muted">Following</small>
+                                    </span>
+                                </div>
+                                <div class="col">
+                                    <span>
+                                        <strong>142</strong>
+                                        <small class="text-muted">Followers</small>
+                                    </span>
+                                </div>
+                                <div class="col">
+                                    <span>
+                                        <strong>142</strong>
+                                        <small class="text-muted">Likes</small>
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="font-monospace align-middle">Hiduplah seperti orang hidup</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs d-flex justify-content-center mt-4 mx-5" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active bg-transparent text-dark mx-2" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-columns"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-transparent text-dark mx-2" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-bookmark"></i></button>
+                    </li>
+                </ul>
+                <div class="tab-content mx-5" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="image-gallery mt-2">
+                            <div class="column">
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/kireinaa/Potrait.webp" data-bs-toggle="modal" data-bs-target="#postModal"/>
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/kireinaa/Square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">_kireinaa_</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/angelch.dt/landscape.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/angelch.dt/square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">angelch.dt</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/angelsargh/potrait.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/angelsargh/square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">angelsargh</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/r_hC5IgV1WU" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/J7kA2PVlh_A" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/rifdahnqyyh/potrait.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/rifdahnqyyh/persegi.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">rifdahnqyyh</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/dppebriani/landscape.jpeg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/dppebriani/persegi.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">dppebriani</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/fauziah.saraswati/Potrait.JPG" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/fauziah.saraswati/Square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">fauziah.saraswati</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/krisnaa_mr/landscape.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/krisnaa_mr/persegi.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">krisnaa_mr</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/ndendfajriii/Potrait.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/ndendfajriii/persegi.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">ndendfajriii</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/sjbagas/portrait.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/sjbagas/square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">sjbagas</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/ndendfajriii/landscape.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/ndendfajriii/persegi.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">ndendfajriii</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/rifdahnqyyh/landscape.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/rifdahnqyyh/persegi.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">rifdahnqyyh</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/hilman.adjie/potrait.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/hilman.adjie/Square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">hilman.adjie</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/sjbagas/landscape.png" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/sjbagas/square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">sjbagas</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/kireinaa/Landscape.jpeg" data-bs-toggle="modal" data-bs-target="#postModal"/>
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/kireinaa/Square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">_kireinaa_</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/angelch.dt/potrait.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/angelch.dt/square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">angelch.dt</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/angelsargh/landscape.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/angelsargh/square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">angelsargh</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/r_hC5IgV1WU" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/hilman.adjie/Square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">hilman.adjie</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/tiarasucirismawati/landscape.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/tiarasucirismawati/persegi.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">tiarasucirismawati</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/J7kA2PVlh_A" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/r_hC5IgV1WU" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/dppebriani/potrait.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/dppebriani/persegi.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">dppebriani</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/fauziah.saraswati/Landscape.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/fauziah.saraswati/Square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">fauziah.saraswati</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/krisnaa_mr/potrait.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/krisnaa_mr/persegi.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">krisnaa_mr</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/tiarasucirismawati/potrait.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/tiarasucirismawati/persegi.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">tiarasucirismawati</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="../assets/img/fauziah.saraswati/Landscape.jpg" />
+                                    <div class="impression p-2">
+                                        <button class="btn btn-dark disabled rounded-pill py-1">
+                                            <small class="text-white"><i class="bi bi-eye"></i> 130K</small>
+                                        </button>
+                                    </div>
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="../assets/img/fauziah.saraswati/Square.jpg" alt="" width="20" height="20">
+                                                <span class="ms-1 small">fauziah.saraswati</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="image-gallery mt-2">
+                            <div class="column">
+                                <div class="image-item" id="" data-bs-toggle="modal" data-bs-target="#mbDetailModal">
+                                    <div class="card">
+                                        <img src="https://source.unsplash.com/VWcPlbHglYc" class="card-img-top" alt="...">
+                                        <div class="card-body bg-prim text-light align-middle">
+                                            <div class="card-title d-flex justify-content-between fs-6 m-0 w-100">
+                                                <span>OOTD</span>
+                                                <i class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="image-item" id="">
+                                    <div class="card">
+                                        <img src="https://source.unsplash.com/VWcPlbHglYc" class="card-img-top" alt="...">
+                                        <div class="card-body bg-prim text-light align-middle">
+                                            <div class="card-title d-flex justify-content-between fs-6 m-0 w-100">
+                                                <span>Shoes</span>
+                                                <i class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="image-item" id="">
+                                    <div class="card">
+                                        <img src="https://source.unsplash.com/VWcPlbHglYc" class="card-img-top" alt="...">
+                                        <div class="card-body bg-prim text-light align-middle">
+                                            <div class="card-title d-flex justify-content-between fs-6 m-0 w-100">
+                                                <span>House Design</span>
+                                                <i class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="image-item" id="">
+                                    <div class="card">
+                                        <img src="https://source.unsplash.com/VWcPlbHglYc" class="card-img-top" alt="...">
+                                        <div class="card-body bg-prim text-light align-middle">
+                                            <div class="card-title d-flex justify-content-between fs-6 m-0 w-100">
+                                                <span>Hiking Items</span>
+                                                <i class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toast-container position-fixed bottom-0 end-0">
+            <div id="liveToast" class="toast bg-sec" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                <div class="toast-header bg-sec text-dark">
+                    <img src="https://source.unsplash.com/Cb5A-Pgetl8" class="object-fit-cover rounded-circle me-2" alt="..." width="32" height="32">
+                    <strong class="me-auto">Fierly</strong>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body bg-light d-flex flex-column bg-sec">
+                    <div class="chat-text d-flex align-items-start flex-wrap scroll-style">
+                        <p class="bg-light rounded-pill py-1 px-3 me-auto">Hello, world! This is a toast message.</p>
+                        <p class="bg-light border rounded-pill py-1 px-3 ms-auto">Hello, world! This is a toast message.</p>
+                        <p class="bg-light rounded-pill py-1 px-3 me-auto">Hello, world! This is a toast message.</p>
+                        <p class="bg-light border rounded-pill py-1 px-3 ms-auto">Hello, world! This is a toast message.</p>
+                        <p class="bg-light rounded-pill py-1 px-3 me-auto">Hello, world! This is a toast message.</p>
+                        <p class="bg-light border rounded-pill py-1 px-3 ms-auto">Hello, world! This is a toast message.</p>
+                        <p class="bg-light rounded-pill py-1 px-3 me-auto">Hello, world! This is a toast message.</p>
+                        <p class="bg-light border rounded-pill py-1 px-3 ms-auto">Hello, world! This is a toast message.</p>
+                        <p class="bg-light rounded-pill py-1 px-3 me-auto">Hello, world! This is a toast message.</p>
+                    </div>
+                    <div class="input-group input-group-sm flex-shrink-1 mt-auto py-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Type here....">
+                        <span class="input-group-text">Send</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="addPostModal" aria-hidden="true" aria-labelledby="addPostModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-sec">
+                    <div class="modal-header w-100 border-dark">
+                        <h1 class="modal-title fs-5 text-center w-100" id="addPostModal">Create a New Post</h1>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center flex-column">
+                        <div class="my-5 py-5 d-flex align-items-center justify-content-center flex-column">
+                            <h1 class="d-block text-gray-dark fs-1"><i class="bi bi-images fs-1"></i></h1>
+                            <span class="fs-5">Drag photos or videos here</span>
+                        </div>
+                        <button class="btn btn-prim mt-3" data-bs-target="#addPostModal2" data-bs-toggle="modal">Choose from file</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="addPostModal2" aria-hidden="true" aria-labelledby="addPostModal2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-sec">
+                <div class="modal-header border-dark">
+                    <h1 class="modal-title fs-5 text-center w-100" id="addPostModal">Create a New Post</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="w-100 rounded object-fit-cover" src="https://source.unsplash.com/UkrEP201nQI"/>
+                        </div>
+                        <div class="col-6 d-flex flex-column">
+                            <div class="p-0 align-items-center">
+                                <img src="https://source.unsplash.com/Cb5A-Pgetl8" class="object-fit-cover rounded-circle me-2" alt="..." width="32" height="32">
+                                <strong>Bu Alfi</strong>
+                            </div>
+                            <div class="flex-fill my-3">
+                                <textarea class="form-control rounded-2 h-75" placeholder="Add caption here..." id="floatingTextarea2" style="resize: none;"></textarea>
+                                <div class="input-group input-group-sm mt-2">
+                                    <span class="input-group-text bg-prim border-0 text-white" id="inputGroup-sizing-sm">Category</span>
+                                    <select class="form-select">
+                                        <option disabled selected hidden></option>
+                                        <option value="1">Nature</option>
+                                        <option value="2">Person</option>
+                                        <option value="3">Animal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="d-grid mt-auto">
+                                <button class="btn btn-prim mt-3" data-bs-dismiss="modal">Upload</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal modal-xl fade" id="mbDetailModal" aria-hidden="true" aria-labelledby="mbDetailModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header w-100">
+                        <h1 class="modal-title fs-5 text-center w-100" id="mbDetailModal">OOTD</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="image-gallery">
+                            <div class="column">
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/Vg3l_fjmqXc" />
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/dF-vrbCACiU" />
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/Utb1XcAX9Fs" />
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/k4YUMbFGgYI" />
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/PNv0pESh9Uk" />
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/MWrI3Q1UVxM" />
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/7WYh2SndeXg" />
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/j3PUmGzYnAQ" />
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/J7kA2PVlh_A" />
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/r_hC5IgV1WU" />
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-item" id="">
+                                    <img class="post-img" src="https://source.unsplash.com/3Y7AX1Z7eCg" />
+                                    <div class="overlay py-2 px-2">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6 mr-auto">
+                                                <img class="profile-img rounded-circle" src="https://source.unsplash.com/VWcPlbHglYc" alt="" width="20" height="20">
+                                                <span class="ms-1 small">Joko</span>
+                                            </div>
+                                            <div class="col-6 text-end small">
+                                                <i class="bi bi-heart text-end"></i>
+                                                <span class="text-end"> 132</span>
+                                                <i class="bi bi-chat text-end ms-3"></i>
+                                                <span class="text-end"> 12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="../assets/chats.js"></script>
+</html>
